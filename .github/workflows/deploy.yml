@@ -24,7 +24,8 @@ jobs:
           node-version: 22
           cache: npm
 
-      - run: npm ci
+      # npm install (not ci) tolerates npm-version differences in optional peer deps.
+      - run: npm install --no-audit --no-fund
 
       # Serves the app from /iskycast/ (see vite.config.ts).
       - run: npm run build -- --mode ghpages
