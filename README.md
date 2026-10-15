@@ -120,7 +120,7 @@ npm run preview    # serve the production build locally
 
 ## Live on GitHub Pages
 
-The site is published at **https://ishi752.github.io/iskycast/**.
+The site is published at **https://ishwari92.github.io/iskycast/**.
 
 Every push to `main` runs [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml), which builds the app
 (`npm run build -- --mode ghpages`, so assets are served from `/iskycast/`) and publishes `dist/` to the
